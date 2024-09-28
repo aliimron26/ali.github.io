@@ -1,10 +1,86 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M. Ali Imron Almuzaky</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 70vh;
+            margin: 0;
+            background-color: azure;
+            position: relative;
+        }
+
+        .profil {
+            width: 500px;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: auto;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            font-style: italic;
+            font-family: 'Courier New', Courier, monospace;
+            color: blue;
+        }
+        .link {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            margin: 0 10px;
+        }
+
+        .date {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #fff;
+            color: blue;
+            font-size: 25px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Nama : M. Ali Imron Almuzaky</h1>
-    <h2>nim : 1202223312</h2>
-    <h3>prodi : S1 Sistem Informasi</h3>
+    <h1>Selamat Datang di profile saya</h1>
+    <img src="M._ALI_IMRON_ALMUZAKY-.png" alt="foto ali">
+    <div class="profil">
+        
+        <h3>M. Ali Imron Almuzaky</h3>
+        <h3>1202223312</h3>
+        <h3>S1 Sistem Informasi</h3>
+    </div>
+
+    <div class="link">
+        <a href="https://www.instagram.com/aliimron_02" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+    </div>
+
+    <div class="date">
+        <script>
+            document.write(new Date().toLocaleDateString());
+        </script>
+    </div>
 </body>
 </html>
